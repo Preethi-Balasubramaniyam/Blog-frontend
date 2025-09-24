@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #6B46C1;
+  --secondary: #E9D8FD;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom component classes */
+.btn-primary {
+  background: linear-gradient(135deg, #6B46C1, #8B5CF6);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: scale(1.05);
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #6B46C1;
+  border-color: transparent;
+}
+
+.hover-purple {
+  transition: all 0.2s ease-in-out;
+}
+
+.hover-purple:hover {
+  background-color: #E9D8FD;
+  color: #6B46C1;
+}
